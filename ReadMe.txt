@@ -4,3 +4,7 @@ Software Carpentry Notes
 
 - Navigation using command line
 - Version control using Git
+	- config
+	- intit
+	- add
+	- commit
