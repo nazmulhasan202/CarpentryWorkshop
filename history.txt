@@ -1,0 +1,258 @@
+    1  sudo root
+    2  wsl -l -v
+    3  pwd
+    4  explorer.exe .
+    5  ls
+    6  cd python-novice-gapminder-data/
+    7  touch hello.py
+    8  ls
+    9  git -v
+   10  pwd
+   11  git --help
+   12  git config --global user.name "nh202"
+   13  git config --global list
+   14  git config --global --list
+   15  git config --global user.email "nh202@arizona.edu"
+   16  git config --global --list
+   17  git config --global core.editor nano
+   18  git config --global --list
+   19  git config --global init.defaultBranch main
+   20  pwd
+   21  ls
+   22  ls -a
+   23  history
+   24  ls -a
+   25  rm hello.py 
+   26  ls
+   27  ls -a
+   28  git init
+   29  ls -a
+   30  git status
+   31  git config --global --list
+   32  pwd
+   33  nano ReadMe.txt
+   34  ls
+   35  cat ReadMe.txt 
+   36  git status
+   37  git add ReadMe.txt 
+   38  git commit -m "Added ReadMe file"
+   39  git staus
+   40  git status
+   41  git log
+   42  git ReadMe.txt 
+   43  nano ReadMe.txt 
+   44  cat ReadMe.txt 
+   45  git status
+   46  git --diff
+   47  diff --git
+   48  git diff
+   49  git add ReadMe.txt 
+   50  git commit -m "Modified ReadMe.txt"
+   51  git log
+   52  get diff
+   53  git diff
+   54  nano ReadMe.txt 
+   55  git diff
+   56  git commit -a -m "Added text in ReadMe.txt"
+   57  git log
+   58  get diff
+   59  git diff
+   60  ls
+   61  cd python-novice-gapminder-data/
+   62  ls
+   63  git config --global --list
+   64  git log
+   65  git status
+   66  git diff HEAD
+   67  git diff HEAD~1
+   68  git diff HEAD~2
+   69  git diff HEAD~3
+   70  git diff HEAD~2
+   71  git show HEAD~2
+   72  git show HEAD~1
+   73  git show HEAD~2
+   74  git show HEAD~0
+   75  git restore HEAD~1 ReadMe.txt
+   76  git restore -s HEAD~1 ReadMe.txt
+   77  cat ReadMe.txt 
+   78  git restore -s HEAD~2 ReadMe.txt
+   79  cat ReadMe.txt 
+   80  git restore -s HEAD~3 ReadMe.txt
+   81  git restore -s HEAD~0 ReadMe.txt
+   82  cat ReadMe.txt 
+   83  git restore -s HEAD~2 ReadMe.txt
+   84  cat ReadMe.txt 
+   85  git restore ReadMe.txt
+   86  cat ReadMe.txt 
+   87  history
+   88  git restore -s HEAD~2 ReadMe.txt
+   89  git diff
+   90  git show
+   91  git restore ReadMe.txt
+   92  git diff
+   93  git show
+   94  git status
+   95  git add .
+   96  git status
+   97  git commit -m "Added data folder"
+   98  git show
+   99  git log
+  100  git reset HEAD~1
+  101  git log
+  102  git staus
+  103  git status
+  104  git reset
+  105  git log
+  106  git status
+  107  git add .
+  108  git status
+  109  git commit
+  110  git log
+  111  git config edit --global
+  112  git config --global --edit
+  113  ls
+  114  cd data/
+  115  touch a.csv b.csv c.csv
+  116  ls
+  117  cd ..
+  118  touch a.tmp b.tmp
+  119  ls
+  120  mkdir scratch
+  121  ls
+  122  cd data/
+  123  ls
+  124  mv a.csv b.csv c.csv scratch/
+  125  mv a.csv b.csv c.csv ..scratch/
+  126  cd ..
+  127* 
+  128  ls
+  129  git stutus
+  130  git status
+  131  tail -n 25 history
+  132  git config --global --edit
+  133  nano .gitignore
+  134  git status
+  135  git status --ignore
+  136  git status --ignored
+  137  nano .gitignore
+  138  ls
+  139  ls -a
+  140  git log
+  141  git add gitignore
+  142  git add .gitignore
+  143  git commit -m "Added .gitignore"
+  144  git log
+  145  git branch
+  146  git checkout -b feature
+  147  git mv ReadMe.txt README.md
+  148  git status
+  149  ls
+  150  git branch
+  151  nano README.md 
+  152  git status
+  153  git log
+  154  git branch
+  155  git add .
+  156  git commit -m "Renamed and modified the readme file file"
+  157  git log
+  158  ls
+  159  git checkout main
+  160  git branch
+  161  git checkout feature
+  162  git branch
+  163  git checkout main
+  164  git diff
+  165  git diff feature
+  166  git merge feature
+  167  git diff
+  168  ls ~/.ssh
+  169  ssh-keygen -t ed25519
+  170  ls -al ~/.ssh
+  171  git branch
+  172  git show-tree
+  173  git log --graph --oneline --all
+  174  sudo apt update && sudo apt install git-extras
+  175  git show-tree
+  176  cat ~/.ssh/id_25519.pub
+  177  ls
+  178  ls ~/.ssh
+  179  cat ~/.ssh/id_ed25519.pub
+  180  ssh -T git@github.com
+  181  pwd
+  182  git remote
+  183  git remote add origin https://github.com/nazmulhasan202/CarpentryWorkshop.git
+  184  git remote -v
+  185  git push origin main
+  186  git remote add origin git@github.com:nazmulhasan202/CarpentryWorkshop.git
+  187  git push origin main
+  188  git remote set-url git@github.com:nazmulhasan202/CarpentryWorkshop.git
+  189  git remote set-url origin git@github.com:nazmulhasan202/CarpentryWorkshop.git
+  190  git push origin main
+  191  git remote -v
+  192  git remote add origin git@github.com:nazmulhasan202/CarpentryWorkshop.git
+  193  git remote set-url origin git@github.com:nazmulhasan202/CarpentryWorkshop.git
+  194  git push origin main
+  195  cd
+  196  git clone git@github.com:nazmulhasan202/CarpentryWorkshop.git copy-2
+  197  pwd
+  198  ls
+  199  cd copy-2/
+  200  ls
+  201  ls data
+  202  cat README.md 
+  203  nano README.md 
+  204  ls -l
+  205  git status
+  206  git diff
+  207  git add .
+  208  git diff
+  209  git diff --staged
+  210  cd -
+  211  cd python-novice-gapminder-data/
+  212  ls
+  213  nano doc.md
+  214  git add .
+  215  git status
+  216  cd -
+  217  cd copy-2/
+  218  git status
+  219  cd -
+  220  cd python-novice-gapminder-data/
+  221  git status
+  222  cd -
+  223  cd copy-2/
+  224  git status
+  225  git diff
+  226  dit diff --staged
+  227  git diff --staged
+  228  git add .
+  229  cd -
+  230  cd python-novice-gapminder-data/
+  231  git add .
+  232  git commit -m "Added doc.md"
+  233  git push
+  234  git pull origin main
+  235  cd -
+  236  cd copy-2/
+  237  git commit -m "Modified README.md"
+  238  cd -
+  239  cd python-novice-gapminder-data/
+  240  git pull origin main
+  241  cd -
+  242  cd copy-2/
+  243  git status
+  244  git push
+  245  cd -
+  246  cd python-novice-gapminder-data/
+  247  git pull origin main
+  248  ls
+  249  git config pull.rebase false --global
+  250  git pull origin main
+  251  git push -u origin main
+  252  git diff origin/main
+  253  cd -
+  254  cd copy-2/
+  255  git diff origin/main
+  256  git pull
+  257  git diff origin/main
+  258  history > history.txt
